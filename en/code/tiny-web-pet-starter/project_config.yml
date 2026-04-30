@@ -1,0 +1,4 @@
+name: "Tiny web pet"
+identifier: "tiny-web-pet-starter"
+type: 'html'
+build: true
