@@ -1,14 +1,21 @@
-title: Project title in sentence case
+title: Tiny web pet
 hero_image: images/banner.png
-description: A short description of the project
-listed: false
+description: Create a tiny virtual pet that lives in a web page
+listed: true
 pdf: false
+landing: true
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: 'Set up your pet page'
+  - title: 'Build the pet interface'
     completion:
-      - engaged      
-  - title: Challenge
+      - 'engaged'
+  - title: 'Add a happiness variable'
+  - title: 'Create an update function'
+  - title: 'Connect the buttons'
+    completion:
+      - 'internal'
+  - title: 'Make happiness decrease over time'
+    completion:
+      - 'external'
+  - title: 'Challenge'
     challenge: true
-    completion:
-      - external

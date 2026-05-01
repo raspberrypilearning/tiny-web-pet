@@ -1,6 +1,19 @@
-// Store how happy your pet is.
-let happiness = 70;
+<h2 class="c-project-heading--task">Create an update function</h2>
 
+Add a function that changes your pet's face based on its happiness level.
+
+Add this code below the happiness variable in `script.js`:
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: javascript
+filename: script.js
+line_numbers: true
+line_number_start: 4
+line_highlights: 4-26
+---
 const update = () => {
   const face = document.getElementById("face");
   const screen = document.getElementById("screen");
@@ -24,23 +37,10 @@ const update = () => {
 };
 
 update();
+--- /code ---
 
-document.getElementById("feed").addEventListener("click", () => {
-  happiness += 10;
-  update();
-});
+</div>
 
-document.getElementById("play").addEventListener("click", () => {
-  happiness += 15;
-  update();
-});
+<h2 class="c-project-heading--task">Test</h2>
 
-document.getElementById("rest").addEventListener("click", () => {
-  happiness += 5;
-  update();
-});
-
-setInterval(() => {
-  happiness -= 5;
-  update();
-}, 3000);
+Run your code to see the screen change colour and the face match your pet's happiness level.
