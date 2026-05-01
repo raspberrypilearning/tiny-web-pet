@@ -1,8 +1,8 @@
-<h2 class="c-project-heading--task">Create an update function</h2>
+<h2 class="c-project-heading--task">Connect the Feed button</h2>
 
-Add a function that changes your pet's face based on its happiness level.
+Make the Feed button increase your pet's happiness when clicked.
 
-Add this code below the happiness variable in `script.js`:
+Add this code below the `update()` function in `script.js`:
 
 <div class="c-project-code">
 
@@ -11,36 +11,20 @@ Add this code below the happiness variable in `script.js`:
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 4
-line_highlights: 4-26
+line_number_start: 20
+line_highlights: 20-26
 ---
-const update = () => {
-  const face = document.getElementById("face");
-  const screen = document.getElementById("screen");
+const message = document.getElementById("message");
 
-  if (happiness > 100) happiness = 100;
-  if (happiness < 0) happiness = 0;
-
-  if (happiness >= 75) {
-    screen.style.background = "lightgreen";
-    face.textContent = ":-)";
-  } else if (happiness >= 50) {
-    screen.style.background = "yellow";
-    face.textContent = ":-|";
-  } else if (happiness >= 25) {
-    screen.style.background = "orange";
-    face.textContent = ":-(";
-  } else {
-    screen.style.background = "salmon";
-    face.textContent = ":'(";
-  }
-};
-
-update();
+document.getElementById("feed").addEventListener("click", () => {
+  happiness += 10;
+  message.textContent = "OK, thank you!";
+  update();
+});
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Run your code to see the screen change colour and the face match your pet's happiness level.
+Run your code, then click the Feed button to see your pet say OK, thank you!

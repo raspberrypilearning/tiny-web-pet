@@ -1,8 +1,8 @@
-<h2 class="c-project-heading--task">Connect the buttons</h2>
+<h2 class="c-project-heading--task">Make happiness decrease over time</h2>
 
-Make the buttons increase your pet's happiness when clicked.
+Add a timer so your pet gets hungry if you don't look after it.
 
-Add this code below the `update()` function in `script.js`:
+Add this code at the bottom of `script.js`:
 
 <div class="c-project-code">
 
@@ -12,26 +12,16 @@ language: javascript
 filename: script.js
 line_numbers: true
 line_number_start: 28
-line_highlights: 28-41
+line_highlights: 28-31
 ---
-document.getElementById("feed").addEventListener("click", () => {
-  happiness += 10;
+setInterval(() => {
+  happiness -= 5;
   update();
-});
-
-document.getElementById("play").addEventListener("click", () => {
-  happiness += 15;
-  update();
-});
-
-document.getElementById("rest").addEventListener("click", () => {
-  happiness += 5;
-  update();
-});
+}, 3000);
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Run your code, then click the Feed, Play, and Rest buttons to watch the pet's face and background colour change.
+Run your code, then wait a few seconds to watch the pet's happiness decrease automatically.

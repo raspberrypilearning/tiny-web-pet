@@ -3,40 +3,24 @@ let happiness = 70;
 
 const update = () => {
   const face = document.getElementById("face");
-  const screen = document.getElementById("screen");
 
   if (happiness > 100) happiness = 100;
   if (happiness < 0) happiness = 0;
 
-  if (happiness >= 75) {
-    screen.style.background = "lightgreen";
+  if (happiness >= 50) {
     face.textContent = ":-)";
-  } else if (happiness >= 50) {
-    screen.style.background = "yellow";
-    face.textContent = ":-|";
-  } else if (happiness >= 25) {
-    screen.style.background = "orange";
-    face.textContent = ":-(";
   } else {
-    screen.style.background = "salmon";
-    face.textContent = ":'(";
+    face.textContent = ":-(";
   }
 };
 
 update();
 
+const message = document.getElementById("message");
+
 document.getElementById("feed").addEventListener("click", () => {
   happiness += 10;
-  update();
-});
-
-document.getElementById("play").addEventListener("click", () => {
-  happiness += 15;
-  update();
-});
-
-document.getElementById("rest").addEventListener("click", () => {
-  happiness += 5;
+  message.textContent = "OK, thank you!";
   update();
 });
 

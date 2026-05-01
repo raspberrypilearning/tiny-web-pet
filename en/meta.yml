@@ -5,13 +5,12 @@ listed: true
 pdf: false
 landing: true
 steps:
-  - title: 'Set up your pet page'
   - title: 'Build the pet interface'
+  - title: 'Add a happiness variable'
     completion:
       - 'engaged'
-  - title: 'Add a happiness variable'
   - title: 'Create an update function'
-  - title: 'Connect the buttons'
+  - title: 'Connect the Feed button'
     completion:
       - 'internal'
   - title: 'Make happiness decrease over time'

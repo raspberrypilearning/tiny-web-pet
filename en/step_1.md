@@ -1,8 +1,8 @@
-<h2 class="c-project-heading--task">Set up your pet page</h2>
+<h2 class="c-project-heading--task">Build the pet interface</h2>
 
-Create the HTML page that will hold your tiny web pet.
+Create the HTML structure for your virtual pet device.
 
-Replace the contents of `index.html` with this code:
+Add this HTML inside the `<body>` tag of your `index.html` file, above the `<script>` tag:
 
 <div class="c-project-code">
 
@@ -11,26 +11,25 @@ Replace the contents of `index.html` with this code:
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 1
-line_highlights: 1-13
+line_number_start: 11
+line_highlights: 11-21
 ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Tiny Web Pet</title>
-  <!-- Connect the CSS file to the page. -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <!-- Add the pet screen and button. -->
+  <section class="frame">
+    <img src="bg3.png" alt="device frame">
+    <main id="screen">
+      <p id="face">:-)</p>
+      <p id="message"></p>
+    </main>
+  </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <section class="buttons" aria-label="Pet care actions">
+    <button id="feed">Feed</button>
+  </section>
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Run your code to see a blank page with the title Tiny Web Pet.
+Run your code to see the pet device with a smiling face and Feed button.

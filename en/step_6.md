@@ -1,8 +1,29 @@
-<h2 class="c-project-heading--task">Make happiness decrease over time</h2>
+<h2 class="c-project-heading--task">Challenge</h2>
 
-Add a timer so your pet gets hungry if you don't look after it.
+Add a new "Dance" button that increases happiness by 20 and makes the pet wiggle side to side.
 
-Add this code at the bottom of `script.js`:
+### Step 1
+
+Add this button inside the buttons section in `index.html`:
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 22
+line_highlights: 22
+---
+  <button id="dance">Dance</button>
+--- /code ---
+
+</div>
+
+### Step 2
+
+Then add this JavaScript above the `setInterval()` code:
 
 <div class="c-project-code">
 
@@ -11,17 +32,26 @@ Add this code at the bottom of `script.js`:
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 43
-line_highlights: 43-46
+line_number_start: 27
+line_highlights: 27-39
 ---
-setInterval(() => {
-  happiness -= 5;
+document.getElementById("dance").addEventListener("click", () => {
+  happiness += 20;
+  message.textContent = "Look at me dance!";
+  const face = document.getElementById("face");
+  face.style.transform = "translateX(20px)";
+  setTimeout(() => {
+    face.style.transform = "translateX(-20px)";
+  }, 200);
+  setTimeout(() => {
+    face.style.transform = "none";
+  }, 400);
   update();
-}, 3000);
+});
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Run your code, then wait a few seconds to watch the pet's happiness decrease automatically.
+Run your code, then click the Dance button to see your pet's happiness increase and the pet wiggle side to side.
