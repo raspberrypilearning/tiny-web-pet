@@ -1,10 +1,6 @@
-<h2 class="c-project-heading--task">Connect the Feed button</h2>
+## Add a feed button
 
-Make the Feed button increase your pet's happiness when clicked.
-
-Add this code below the `update()` function in `script.js`:
-
-<div class="c-project-code">
+In the **index.html** file, make a button to interact with the pet.
 
 --- code ---
 ---
@@ -14,17 +10,16 @@ line_numbers: true
 line_number_start: 20
 line_highlights: 20-26
 ---
-const message = document.getElementById("message");
+  <section class="case">
+    <img src="bg3.png" alt="device case">
+    <p id="face">:-)</p>
+  </section>
 
-document.getElementById("feed").addEventListener("click", () => {
-  happiness += 10;
-  message.textContent = "OK, thank you!";
-  update();
-});
+  <button id="feed">Feed</button>
+</body>
 --- /code ---
 
-</div>
+## Run your code
+See the button appear below the case. 
 
-<h2 class="c-project-heading--task">Test</h2>
-
-Run your code, then click the Feed button to see your pet say OK, thank you!
+The button here is to "feed". Change the text on the button depending on what you want it to do. 

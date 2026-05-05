@@ -1,57 +1,24 @@
-<h2 class="c-project-heading--task">Challenge</h2>
+## Add a message
 
-Add a new "Dance" button that increases happiness by 20 and makes the pet wiggle side to side.
-
-### Step 1
-
-Add this button inside the buttons section in `index.html`:
-
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 22
-line_highlights: 22
----
-  <button id="dance">Dance</button>
---- /code ---
-
-</div>
-
-### Step 2
-
-Then add this JavaScript above the `setInterval()` code:
-
-<div class="c-project-code">
+Add to the `script.js` so that your pet can send a message when the button is clicked.
 
 --- code ---
 ---
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 27
-line_highlights: 27-39
+line_number_start: 20
+line_highlights: 20-27
 ---
-document.getElementById("dance").addEventListener("click", () => {
-  happiness += 20;
-  message.textContent = "Look at me dance!";
-  const face = document.getElementById("face");
-  face.style.transform = "translateX(20px)";
-  setTimeout(() => {
-    face.style.transform = "translateX(-20px)";
-  }, 200);
-  setTimeout(() => {
-    face.style.transform = "none";
-  }, 400);
-  update();
+const feed = document.getElementById("feed");
+const message = document.getElementById("message");
+
+feed.addEventListener("click", () => {
+  happiness += 10;
+  message.textContent = "Oooo yum thank you!";
+  mood();
 });
 --- /code ---
 
-</div>
-
-<h2 class="c-project-heading--task">Test</h2>
-
-Run your code, then click the Dance button to see your pet's happiness increase and the pet wiggle side to side.
+## Run your code
+Click the button to see the new message

@@ -1,37 +1,61 @@
-<h2 class="c-project-heading--task">Create an update function</h2>
+## Create a function
 
-Add a function that changes your pet's face based on its happiness level.
+Add a JavaScript function to change your pet's face.
 
-Add this code below the happiness variable in `script.js`:
+## Step 1
+Open `script.js` in the project file tab.
 
-<div class="c-project-code">
+## Step 2
+Add this function, which changes the face if the happiness is below 50.
+
+Instead of the smiley and sad faces, add your own emojis.
 
 --- code ---
 ---
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 4
-line_highlights: 4-18
+line_number_start: 1
+line_highlights: 1-13
 ---
-const update = () => {
-  const face = document.getElementById("face");
+let happiness = 70; // starting happiness level
 
-  if (happiness > 100) happiness = 100;
-  if (happiness < 0) happiness = 0;
+const face = document.getElementById("face");
 
+const mood = () => {
   if (happiness >= 50) {
     face.textContent = ":-)";
   } else {
     face.textContent = ":-(";
   }
 };
-
-update();
 --- /code ---
 
-</div>
+## Step 3
+Add `setInterval()` function to decrease the happiness level by 5 every 3 seconds. 
 
-<h2 class="c-project-heading--task">Test</h2>
+> ### Tip
+>
+> `setInterval()` is a JavaScript command that works like a timer.
+> 
+> - `-= 5` decreases the happiness level by 5
+> - `3000` milliseconds means 3 seconds
 
-Run your code to see the face match your pet's happiness level.
+--- code ---
+---
+language: javascript
+filename: script.js
+line_numbers: true
+line_number_start: 28
+line_highlights: 28-31
+---
+setInterval(() => {
+  happiness -= 5;
+  mood();
+}, 3000);
+--- /code ---
+
+## Run your code
+See the face change over time. 
+
+Change the timer so that it changes with the speed you wan it to.

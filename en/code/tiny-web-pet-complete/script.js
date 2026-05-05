@@ -1,30 +1,29 @@
 // Store how happy your pet is.
 let happiness = 70;
 
-const update = () => {
-  const face = document.getElementById("face");
+const face = document.getElementById("face");
 
-  if (happiness > 100) happiness = 100;
-  if (happiness < 0) happiness = 0;
-
-  if (happiness >= 50) {
+const mood = () => {
+  if (happiness >= 80) {
+    face.textContent = ":-D";
+  } else if (happiness >= 50) {
     face.textContent = ":-)";
   } else {
     face.textContent = ":-(";
   }
 };
 
-update();
+mood();
 
 const message = document.getElementById("message");
 
 document.getElementById("feed").addEventListener("click", () => {
   happiness += 10;
   message.textContent = "OK, thank you!";
-  update();
+  mood();
 });
 
 setInterval(() => {
   happiness -= 5;
-  update();
+  mood();
 }, 3000);

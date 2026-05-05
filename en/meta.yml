@@ -1,20 +1,23 @@
 title: Tiny web pet
 hero_image: images/banner.png
 description: Create a tiny virtual pet that lives in a web page
-listed: true
+listed: false
 pdf: false
 landing: true
 steps:
-  - title: 'Build the pet interface'
-  - title: 'Add a happiness variable'
+  - title: 'Step 1'
+  - title: 'Step 2'
     completion:
       - 'engaged'
-  - title: 'Create an update function'
-  - title: 'Connect the Feed button'
+  - title: 'Step 3'
+  - title: 'Step 4'
+  - title: 'Step 5'
     completion:
       - 'internal'
-  - title: 'Make happiness decrease over time'
+  - title: 'Step 6'
+  - title: 'Step 7'
+    challenge: true
     completion:
       - 'external'
-  - title: 'Challenge'
+  - title: 'Step 8'
     challenge: true

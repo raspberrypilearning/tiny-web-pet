@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Build the pet interface</h2>
+## Choose the case
 
-Create the HTML structure for your virtual pet device.
+## Step 1
+Click on the Image gallery tab and choose a background image for the case.
 
-Add this HTML inside the `<body>` tag of your `index.html` file, above the `<script>` tag:
-
-<div class="c-project-code">
+## Step 2
+In the **index.html** add a `<section>` for the case.
 
 --- code ---
 ---
@@ -14,22 +14,33 @@ line_numbers: true
 line_number_start: 11
 line_highlights: 11-21
 ---
-  <!-- Add the pet screen and button. -->
-  <section class="frame">
-    <img src="bg3.png" alt="device frame">
-    <main id="screen">
-      <p id="face">:-)</p>
-      <p id="message"></p>
-    </main>
-  </section>
+  <section class="case">
 
-  <section class="buttons" aria-label="Pet care actions">
-    <button id="feed">Feed</button>
   </section>
 --- /code ---
 
-</div>
+## Step 3
+Add an `<img>` with the name of the case you have chosen. 
 
-<h2 class="c-project-heading--task">Test</h2>
+In the example, this is `src="bg3.png"`
 
-Run your code to see the pet device with a smiling face and Feed button.
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 11
+line_highlights: 11-21
+---
+  <section class="case">
+    <img src="bg3.png" alt="device case">
+  </section>
+--- /code ---
+
+> ### Tip
+> 
+> `alt="device case"` is alt text, which is used by screen readers or there is an issue with the image showing.
+{: .c-project-callout .c-project-callout--tip}
+
+## Run your code
+See the device case you chose.

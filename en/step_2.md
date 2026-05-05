@@ -1,25 +1,22 @@
-<h2 class="c-project-heading--task">Add a happiness variable</h2>
+## Add a face
 
-Add JavaScript to track your pet's happiness level.
-
-Create a variable to store the happiness level:
-
-<div class="c-project-code">
+Put a face inside the case. This will change when the pet is not happy. 
 
 --- code ---
 ---
-language: javascript
-filename: script.js
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 1
-line_highlights: 1-2
+line_number_start: 11
+line_highlights: 11-21
 ---
-// Store how happy your pet is.
-let happiness = 70;
+  <section class="case">
+    <img src="bg3.png" alt="device case">
+    <p id="face">:-)</p>
+  </section>
 --- /code ---
 
-</div>
+## Run your code
+See the pet device with a smiling face. 
 
-<h2 class="c-project-heading--task">Test</h2>
-
-Run your code to check that the pet device still appears with no errors.
+You can experiment with other emojis instead of the smiley face.
