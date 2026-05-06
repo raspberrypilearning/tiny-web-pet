@@ -2,8 +2,11 @@
 let happiness = 70;
 
 const face = document.getElementById("face");
+const message = document.getElementById("message");
 
 const mood = () => {
+  message.textContent = "";
+
   if (happiness >= 80) {
     face.textContent = ":-D";
   } else if (happiness >= 50) {
@@ -15,12 +18,10 @@ const mood = () => {
 
 mood();
 
-const message = document.getElementById("message");
-
 document.getElementById("feed").addEventListener("click", () => {
   happiness += 10;
-  message.textContent = "OK, thank you!";
   mood();
+  message.textContent = "Oooo, yum thanks!";
 });
 
 setInterval(() => {

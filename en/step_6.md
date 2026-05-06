@@ -7,21 +7,31 @@ Add to the `script.js` so that your pet can send a message when the button is cl
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 14
-line_highlights: 14-21
+line_number_start: 4
+line_highlights: 5, 8, 20-25
 ---
+const face = document.getElementById("face");
 const message = document.getElementById("message");
-const feed = document.getElementById("feed");
+
+const mood = () => {
+  message.textContent = "";
+  
+  if (happiness >= 50) {
+    face.textContent = ":-)";
+  } else {
+    face.textContent = ":-(";
+  }
+};
 
 feed.addEventListener("click", () => {
   happiness += 10;
-  message.textContent = "Oooo yum thank you!";
   mood();
+  message.textContent = "Oooo yum thank you!";
 });
 --- /code ---
 
 ### Now run your code
-Click the button to see the new message.
+Click the button to see the new message, then wait for the pet's mood to update.
 
 <div class="c-project-output">
 
