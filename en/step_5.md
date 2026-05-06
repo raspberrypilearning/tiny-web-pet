@@ -2,6 +2,8 @@
 
 In `script.js` increase your pet's happiness when the button is clicked.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: javascript
@@ -18,11 +20,13 @@ feed.addEventListener("click", () => {
 });
 --- /code ---
 
+</div>
+
 ### Now run your code
 Click the button to see the pet change.
 
 <div class="c-project-output">
 
-![A device case with a feed button ready to click.](images/step_5_output.png)
+![A device case with a feed button ready to click.](images/step5.png)
 
 </div>

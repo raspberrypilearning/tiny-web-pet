@@ -4,6 +4,8 @@ Give your pet three different moods for three happiness levels.
 
 Add to the `mood()` function in `script.js` with this code.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: javascript
@@ -23,11 +25,13 @@ const mood = () => {
 };
 --- /code ---
 
+</div>
+
 ### Now run your code
 Run your code to see the other faces. Change the faces with other moods to suit your pet.
 
 <div class="c-project-output">
 
-![A device case with buttons and a pet face with three possible moods.](images/step_8_output.png)
+![A device case with buttons and a pet face with three possible moods.](images/step8.png)
 
 </div>

@@ -2,6 +2,8 @@
 
 In the **index.html** file, make a button to interact with the pet.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: html
@@ -20,6 +22,8 @@ line_highlights: 13, 16
 </body>
 --- /code ---
 
+</div>
+
 ### Now run your code
 See the button appear below the case. 
 
@@ -27,6 +31,6 @@ The button here is to "feed". Change the text on the button depending on what yo
 
 <div class="c-project-output">
 
-![A device case with a feed button below it.](images/step_4_output.png)
+![A device case with a feed button below it.](images/step4.png)
 
 </div>

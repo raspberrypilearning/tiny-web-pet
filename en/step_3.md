@@ -10,6 +10,8 @@ Add this function, which changes the face if the happiness is below 50.
 
 Instead of the smiley and sad faces, add your own emojis.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: javascript
@@ -32,6 +34,8 @@ const mood = () => {
 };
 --- /code ---
 
+</div>
+
 ### Step 3
 Add `setInterval()` to decrease the happiness level by 5 every 3 seconds. 
 
@@ -41,6 +45,8 @@ Add `setInterval()` to decrease the happiness level by 5 every 3 seconds.
 > 
 > - `-= 5` decreases the happiness level by 5
 > - `3000` milliseconds means 3 seconds
+
+<div class="c-project-code">
 
 --- code ---
 ---
@@ -56,6 +62,8 @@ setInterval(() => {
 }, 3000);
 --- /code ---
 
+</div>
+
 ### Now run your code
 See the face change over time. 
 
@@ -63,6 +71,6 @@ Change the timer so that it changes with the speed you want it to.
 
 <div class="c-project-output">
 
-![A device case with a face that can change over time.](images/step_3_output.png)
+![A device case with a face that can change over time.](images/step3.png)
 
 </div>

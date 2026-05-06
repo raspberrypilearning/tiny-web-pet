@@ -6,6 +6,8 @@ Add more buttons to care for your pet.
 
 Add another button in `index.html`.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: html
@@ -18,6 +20,8 @@ line_highlights: 17
   <button id="play">Play</button>
 </body>
 --- /code ---
+
+</div>
 
 ### Step 2
 
@@ -49,6 +53,6 @@ Try adding another button with a different name, message, or happiness change.
 
 <div class="c-project-output">
 
-![A device case with feed and play buttons below it.](images/step_7_output.png)
+![A device case with feed and play buttons below it.](images/step7.png)
 
 </div>

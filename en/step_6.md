@@ -2,6 +2,8 @@
 
 Add to the `script.js` so that your pet can send a message when the button is clicked.
 
+<div class="c-project-code">
+
 --- code ---
 ---
 language: javascript
@@ -30,11 +32,13 @@ feed.addEventListener("click", () => {
 });
 --- /code ---
 
+</div>
+
 ### Now run your code
 Click the button to see the new message, then wait for the pet's mood to update.
 
 <div class="c-project-output">
 
-![A device case with a feed button that can show a message.](images/step_6_output.png)
+![A device case with a feed button that can show a message.](images/step6.png)
 
 </div>
