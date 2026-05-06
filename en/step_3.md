@@ -2,10 +2,10 @@
 
 Add a JavaScript function to change your pet's face.
 
-## Step 1
+### Step 1
 Open `script.js` in the project file tab.
 
-## Step 2
+### Step 2
 Add this function, which changes the face if the happiness is below 50.
 
 Instead of the smiley and sad faces, add your own emojis.
@@ -16,9 +16,10 @@ language: javascript
 filename: script.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-13
+line_highlights: 1-12
 ---
-let happiness = 70; // starting happiness level
+// Store how happy your pet is.
+let happiness = 70;
 
 const face = document.getElementById("face");
 
@@ -31,8 +32,8 @@ const mood = () => {
 };
 --- /code ---
 
-## Step 3
-Add `setInterval()` function to decrease the happiness level by 5 every 3 seconds. 
+### Step 3
+Add `setInterval()` to decrease the happiness level by 5 every 3 seconds. 
 
 > ### Tip
 >
@@ -46,8 +47,8 @@ Add `setInterval()` function to decrease the happiness level by 5 every 3 second
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 28
-line_highlights: 28-31
+line_number_start: 14
+line_highlights: 14-17
 ---
 setInterval(() => {
   happiness -= 5;
@@ -55,7 +56,13 @@ setInterval(() => {
 }, 3000);
 --- /code ---
 
-## Run your code
+### Now run your code
 See the face change over time. 
 
-Change the timer so that it changes with the speed you wan it to.
+Change the timer so that it changes with the speed you want it to.
+
+<div class="c-project-output">
+
+![A device case with a face that can change over time.](images/step_3_output.png)
+
+</div>

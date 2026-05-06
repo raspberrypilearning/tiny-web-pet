@@ -7,11 +7,11 @@ Add to the `script.js` so that your pet can send a message when the button is cl
 language: javascript
 filename: script.js
 line_numbers: true
-line_number_start: 20
-line_highlights: 20-27
+line_number_start: 14
+line_highlights: 14-21
 ---
-const feed = document.getElementById("feed");
 const message = document.getElementById("message");
+const feed = document.getElementById("feed");
 
 feed.addEventListener("click", () => {
   happiness += 10;
@@ -20,5 +20,11 @@ feed.addEventListener("click", () => {
 });
 --- /code ---
 
-## Run your code
-Click the button to see the new message
+### Now run your code
+Click the button to see the new message.
+
+<div class="c-project-output">
+
+![A device case with a feed button that can show a message.](images/step_6_output.png)
+
+</div>

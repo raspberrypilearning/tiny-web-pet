@@ -7,8 +7,8 @@ Put a face inside the case. This will change when the pet is not happy.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 11
-line_highlights: 11-21
+line_number_start: 10
+line_highlights: 12
 ---
   <section class="case">
     <img src="bg3.png" alt="device case">
@@ -16,7 +16,13 @@ line_highlights: 11-21
   </section>
 --- /code ---
 
-## Run your code
+### Now run your code
 See the pet device with a smiling face. 
 
 You can experiment with other emojis instead of the smiley face.
+
+<div class="c-project-output">
+
+![A device case with a smiling face on the screen.](images/step_2_output.png)
+
+</div>
